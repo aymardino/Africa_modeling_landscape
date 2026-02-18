@@ -1,0 +1,29 @@
+tool_name;full_name;origin_country;origin_institution;license;cost_usd;free_for_developing;learning_curve;doc_quality;training_available;community;programming_required;os;nb_studies_in_inventory;best_for
+LEAP;Low Emissions Analysis Platform;SE,US;SEI;freemium;€3?000;yes;medium;high;yes;yes;none;windows;13;national_planning
+OSeMOSYS;Open Source Energy Modelling System;SE;KTH / SEI / UNDESA;open_source;€0;yes;high;medium;yes;yes;advanced;all;17;national_planning
+TIMES/MARKAL;The Integrated MARKAL-EFOM System / MARKet ALlocation;INT;IEA-ETSAP;open_source;€0;yes;high;high;yes;yes;advanced;windows;7;national_planning
+MESSAGE;Model for Energy Supply Strategy Alternatives and their General Environmental Impact;INT;IIASA;open_source;€0;yes;high;medium;yes;yes;advanced;all;5;national_planning,regional_trade
+SPLAT;System Planning Long-term Alternative for Transmission;INT;IRENA;open_source;€0;yes;high;medium;yes;yes;none;windows;2;regional_trade
+PyPSA;Python for Power System Analysis;DE;FIAS / KIT / TU Berlin;open_source;€0;yes;high;high;yes;yes;advanced;all;2;national_planning
+Calliope;Calliope;CH,GB;Univ. of Cambridge / ETH Zurich;open_source;€0;yes;high;high;yes;yes;advanced;all;1;national_planning
+ONSSET;Open Source Spatial Electrification Tool;SE;KTH;open_source;€0;yes;medium;medium;yes;yes;advanced;all;12;electrification,geospatial_analysis
+Balmorel;Baltic Model of Regional Energy Liberalisation;DK;Ea Energy Analyses / DTU;open_source;€0;yes;high;medium;yes;yes;advanced;all;1;national_planning,sector_coupling
+Plexos;PLEXOS Integrated Energy Model;AU;Energy Exemplar;proprietary;€50?000;no;high;high;yes;yes;none;windows;2;dispatch_flexibility
+HOMER Pro;Hybrid Optimization of Multiple Energy Resources;US;NREL;proprietary;€2?000;no;medium;high;yes;yes;none;windows;4;electrification
+Vensim;Vensim;US;Ventana Systems;freemium;€2?000;no;medium;high;yes;yes;none;all;1;system_dynamics
+Flextool;Flextool;INT;VTT / IRENA;open_source;€0;yes;medium;medium;yes;yes;none;windows;6;dispatch_flexibility
+MAED;Model for Analysis of Energy Demand;INT;IAEA;freemium;€0;yes;medium;medium;yes;yes;none;windows;1;demand_forecasting
+EnergyPLAN;EnergyPLAN;DK;Aalborg University;freemium;€0;yes;medium;high;yes;yes;none;windows;1;sector_coupling
+QGIS;Quantum Geographic Information System;INT;OSGeo;open_source;€0;yes;high;high;yes;yes;none;all;1;geospatial_analysis
+ArcGIS;ArcGIS;US;Esri;proprietary;€1?000;no;high;high;yes;yes;none;windows;0;geospatial_analysis
+CLEWs;Climate, Land, Energy and Water strategies;SE;KTH / UNDESA;open_source;€0;yes;high;medium;yes;yes;advanced;all;1;nexus_modeling,water_planning
+WASP;Wien Automatic System Planning;INT;IAEA / TVA;freemium;€0;yes;high;medium;yes;yes;none;windows;0;national_planning
+NEMO;Next Energy Modeling system for Optimization;SE,US;SEI;open_source;€0;yes;high;medium;yes;yes;advanced;all;1;national_planning
+WEAP;Water Evaluation and Planning;SE,US;SEI;freemium;€3?000;yes;medium;high;yes;yes;none;windows;1;water_planning
+Dispa-SET;Dispatch model for the European power System with the Shared Energy Technologies;BE,NL;EC Joint Research Centre;open_source;€0;yes;high;medium;yes;yes;advanced;all;1;dispatch_flexibility
+NECAL2050;Nigeria Energy Calculator 2050;GB,NG;UK Govt / Energy Commission;open_source;€0;yes;low;medium;yes;no;none;all;1;national_planning
+SWITCH;Solar and Wind Integrated with Transmission and Conventional sources on a Hourly basis;US;UC Berkeley / Univ. of Hawaii;open_source;€0;yes;high;medium;yes;yes;advanced;all;1;dispatch_flexibility,national_planning
+SATIM;South Africa TIMES Model;ZA;Univ. of Cape Town;freemium;€5?000;no;high;medium;yes;no;advanced;windows;1;national_planning
+TEMBA;The Electricity Model Base for Africa;SE;KTH / UNDESA;open_source;€0;yes;high;medium;yes;yes;advanced;all;1;national_planning,regional_trade
+SIMPACTS;Simplified Approach for Estimating Impacts of Electricity Generation;INT;IAEA;freemium;€0;yes;medium;medium;yes;yes;none;windows;1;environmental_impact
+CERC;Cambridge Environmental Research Consultants;GB;CERC Ltd;proprietary;€10?000;no;high;high;yes;yes;none;windows;1;environmental_impact

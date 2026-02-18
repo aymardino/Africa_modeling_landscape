@@ -1,0 +1,55 @@
+iso_code;country_name;power_pool;region;language;nb_models_applied;nb_models_national;has_institutional_capacity;data_availability;electrification_rate;has_ndc;has_lts
+DZ;Algeria;NAPP;north;AR;12;2;partial;moderate;99,8;yes;no
+AO;Angola;SAPP;southern;PT;11;0;no;poor;47,0;yes;no
+BJ;Benin;WAPP;west;FR;13;1;partial;moderate;43,0;yes;no
+BW;Botswana;SAPP;southern;EN;12;1;partial;moderate;75,0;yes;no
+BF;Burkina Faso;WAPP;west;FR;14;2;no;moderate;19,0;yes;no
+BI;Burundi;EAPP;east;FR;10;0;no;poor;10,0;yes;no
+CV;Cape Verde;WAPP;west;PT;1;0;no;poor;95,0;yes;no
+CM;Cameroon;CAPP;central;FR;13;3;partial;moderate;65,0;yes;no
+CF;Central African Republic;CAPP;central;FR;10;0;no;poor;15,0;yes;no
+TD;Chad;CAPP;central;FR;10;0;no;poor;11,0;yes;no
+KM;Comoros;EAPP;east;FR;1;0;no;poor;84,0;yes;no
+CD;Democratic Republic of the Congo;SAPP;central;FR;11;0;no;poor;19,0;yes;no
+CG;Republic of the Congo;CAPP;central;FR;10;0;no;poor;50,0;yes;no
+DJ;Djibouti;EAPP;east;FR;10;0;no;poor;62,0;yes;no
+EG;Egypt;EAPP;north;AR;14;3;partial;good;100,0;yes;no
+GQ;Equatorial Guinea;CAPP;central;ES;10;0;no;poor;67,0;yes;no
+ER;Eritrea;EAPP;east;MIXED;10;0;no;poor;52,0;yes;no
+SZ;Eswatini;SAPP;southern;EN;11;0;no;poor;82,0;yes;no
+ET;Ethiopia;EAPP;east;MIXED;12;2;partial;moderate;51,0;yes;yes
+GA;Gabon;CAPP;central;FR;10;0;no;poor;92,0;yes;no
+GM;Gambia;WAPP;west;EN;13;1;partial;moderate;65,0;yes;no
+GH;Ghana;WAPP;west;EN;15;3;partial;good;85,0;yes;no
+GN;Guinea;WAPP;west;FR;12;0;no;poor;44,0;yes;no
+GW;Guinea-Bissau;WAPP;west;PT;12;0;no;poor;36,0;yes;no
+CI;Ivory Coast;WAPP;west;FR;11;0;partial;moderate;70,0;yes;no
+KE;Kenya;EAPP;east;EN;17;6;yes;good;76,0;yes;yes
+LS;Lesotho;SAPP;southern;EN;11;0;no;poor;47,0;yes;no
+LR;Liberia;WAPP;west;EN;12;0;no;poor;28,0;yes;no
+LY;Libya;NAPP;north;AR;9;0;no;poor;70,0;no;no
+MG;Madagascar;EAPP;east;FR;8;0;no;poor;34,0;yes;no
+MW;Malawi;SAPP;southern;EN;11;0;no;poor;14,0;yes;no
+ML;Mali;WAPP;west;FR;13;1;partial;moderate;50,0;yes;no
+MR;Mauritania;NAPP;north;AR;11;0;no;poor;47,0;yes;no
+MU;Mauritius;EAPP;east;EN;1;0;partial;moderate;99,0;yes;yes
+MA;Morocco;NAPP;north;AR;10;2;partial;good;100,0;yes;yes
+MZ;Mozambique;SAPP;southern;PT;12;1;no;moderate;31,0;yes;no
+NA;Namibia;SAPP;southern;EN;11;0;no;moderate;56,0;yes;no
+NE;Niger;WAPP;west;FR;12;0;no;poor;19,0;yes;no
+NG;Nigeria;WAPP;west;EN;19;4;partial;moderate;60,0;yes;yes
+RW;Rwanda;EAPP;east;EN;11;1;partial;moderate;47,0;yes;yes
+ST;Sao Tome and Principe;CAPP;central;PT;1;0;no;poor;76,0;yes;no
+SN;Senegal;WAPP;west;FR;12;0;no;moderate;68,0;yes;no
+SC;Seychelles;EAPP;east;EN;1;0;no;poor;100,0;yes;no
+SL;Sierra Leone;WAPP;west;EN;12;0;no;poor;27,0;yes;no
+SO;Somalia;EAPP;east;MIXED;9;0;no;poor;36,0;yes;no
+ZA;South Africa;SAPP;southern;EN;14;3;yes;good;86,0;yes;yes
+SS;South Sudan;EAPP;east;EN;4;1;no;poor;8,0;yes;no
+SD;Sudan;EAPP;east;AR;10;0;no;poor;55,0;yes;no
+TZ;Tanzania;EAPP;east;EN;12;1;no;moderate;40,0;yes;no
+TG;Togo;WAPP;west;FR;13;1;partial;moderate;55,0;yes;no
+TN;Tunisia;NAPP;north;AR;13;2;partial;good;100,0;yes;no
+UG;Uganda;EAPP;east;EN;11;1;no;moderate;42,0;yes;no
+ZM;Zambia;SAPP;southern;EN;14;2;partial;moderate;43,0;yes;no
+ZW;Zimbabwe;SAPP;southern;EN;11;0;no;moderate;50,0;yes;no
