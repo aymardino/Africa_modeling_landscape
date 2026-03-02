@@ -6,6 +6,11 @@ from pathlib import Path
 
 BASE = Path(__file__).parent.parent / "data"
 
+
+def data_file_mtime(filename: str) -> int:
+    """Return nanosecond mtime for a data file (used as cache key)."""
+    return (BASE / filename).stat().st_mtime_ns
+
 # ISO alpha-2 → ISO alpha-3 mapping for African countries (for Plotly choropleth)
 ISO2_TO_ISO3 = {
     "DZ": "DZA", "AO": "AGO", "BJ": "BEN", "BW": "BWA", "BF": "BFA",

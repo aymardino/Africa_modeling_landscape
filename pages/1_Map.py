@@ -7,7 +7,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 import streamlit as st
 import plotly.express as px
 import pandas as pd
-from utils.data import load_countries, load_studies, enrich_countries, get_country_studies
+from utils.data import load_countries, load_studies, enrich_countries, get_country_studies, data_file_mtime
 from utils.ui import SIDEBAR_CSS
 
 st.set_page_config(page_title="Map | AISESA", layout="wide", page_icon="assets/aisesa_logo.png")
@@ -17,12 +17,15 @@ REGION_COLORS = {"north":"#1565C0","west":"#2E7D32","east":"#6A1B9A","central":"
 POOL_COLORS   = {"COMELEC":"#0277BD","WAPP":"#2E7D32","EAPP":"#6A1B9A","CAPP":"#BF360C","SAPP":"#37474F"}
 
 @st.cache_data
-def get_data():
+def get_data(countries_mtime: int, studies_mtime: int):
     c = load_countries()
     s = load_studies()
     return enrich_countries(c, s), s
 
-countries_full, studies = get_data()
+countries_full, studies = get_data(
+    data_file_mtime("countries.csv"),
+    data_file_mtime("studies.csv"),
+)
 
 # ── Sidebar filters ────────────────────────────────────────────────────────────
 with st.sidebar:
@@ -178,6 +181,7 @@ with col2:
     model_counts.columns = ["Model","Studies"]
     model_counts = model_counts[model_counts["Studies"] > 0].nlargest(10,"Studies")
     model_counts["Model"] = model_counts["Model"].str.slice(0,22)
+    print(model_counts)
     fig_m = px.bar(
         model_counts.sort_values("Studies"),
         x="Studies", y="Model", orientation="h",

@@ -7,7 +7,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 import streamlit as st
 import plotly.express as px
 import pandas as pd
-from utils.data import load_countries, load_studies, enrich_countries
+from utils.data import load_countries, load_studies, enrich_countries, data_file_mtime
 from utils.ui import SIDEBAR_CSS
 
 st.set_page_config(page_title="Gap Analysis | AISESA", layout="wide", page_icon="assets/aisesa_logo.png")
@@ -16,12 +16,15 @@ st.html(SIDEBAR_CSS)
 REGION_COLORS = {"north":"#1565C0","west":"#2E7D32","east":"#6A1B9A","central":"#E65100","southern":"#37474F"}
 
 @st.cache_data
-def get_data():
+def get_data(countries_mtime: int, studies_mtime: int):
     c = load_countries()
     s = load_studies()
     return enrich_countries(c, s), s
 
-countries, studies = get_data()
+countries, studies = get_data(
+    data_file_mtime("countries.csv"),
+    data_file_mtime("studies.csv"),
+)
 n = len(studies)
 
 # ── Sidebar ─────────────────────────────────────────────────────────────────────

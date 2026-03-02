@@ -7,17 +7,20 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 import streamlit as st
 import plotly.express as px
 import pandas as pd
-from utils.data import load_studies, load_countries
+from utils.data import load_studies, load_countries, data_file_mtime
 from utils.ui import SIDEBAR_CSS
 
 st.set_page_config(page_title="Browse Studies | AISESA", layout="wide", page_icon="assets/aisesa_logo.png")
 st.html(SIDEBAR_CSS)
 
 @st.cache_data
-def get_data():
+def get_data(studies_mtime: int, countries_mtime: int):
     return load_studies(), load_countries()
 
-studies, countries = get_data()
+studies, countries = get_data(
+    data_file_mtime("studies.csv"),
+    data_file_mtime("countries.csv"),
+)
 
 # ── Sidebar filters ─────────────────────────────────────────────────────────────
 with st.sidebar:
