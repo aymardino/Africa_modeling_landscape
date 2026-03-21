@@ -6,7 +6,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 
-from utils.data import load_countries, load_studies, load_tools, enrich_countries, data_file_mtime
+from utils.data import load_countries, load_studies, load_tools, enrich_countries
 from utils.ui import SIDEBAR_CSS
 
 st.set_page_config(
@@ -77,8 +77,8 @@ st.markdown(
 )
 
 
-@st.cache_data
-def get_data(countries_mtime: int, studies_mtime: int, tools_mtime: int):
+@st.cache_data(ttl=3600)
+def get_data():
     countries = load_countries()
     studies = load_studies()
     tools = load_tools()
@@ -86,12 +86,8 @@ def get_data(countries_mtime: int, studies_mtime: int, tools_mtime: int):
     return enriched, studies, tools
 
 
-countries, studies, tools = get_data(
-    data_file_mtime("countries.csv"),
-    data_file_mtime("studies.csv"),
-    data_file_mtime("tools.csv"),
-)
-
+countries, studies, tools = get_data()
+print(tools)
 st.divider()
 
 # ── About ──────────────────────────────────────────────────────────────────────

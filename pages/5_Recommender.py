@@ -6,17 +6,17 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 
 import streamlit as st
 import pandas as pd
-from utils.data import load_tools, data_file_mtime
+from utils.data import load_tools
 from utils.ui import SIDEBAR_CSS
 
 st.set_page_config(page_title="Recommender | AISESA", layout="wide", page_icon="assets/aisesa_logo.png")
 st.html(SIDEBAR_CSS)
 
-@st.cache_data
-def get_tools(tools_mtime: int):
+@st.cache_data(ttl=3600)
+def get_tools():
     return load_tools()
 
-tools = get_tools(data_file_mtime("tools.csv"))
+tools = get_tools()
 
 with st.sidebar:
     st.markdown("---")

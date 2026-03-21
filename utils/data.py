@@ -6,11 +6,6 @@ from pathlib import Path
 
 BASE = Path(__file__).parent.parent / "data"
 
-
-def data_file_mtime(filename: str) -> int:
-    """Return nanosecond mtime for a data file (used as cache key)."""
-    return (BASE / filename).stat().st_mtime_ns
-
 # ISO alpha-2 → ISO alpha-3 mapping for African countries (for Plotly choropleth)
 ISO2_TO_ISO3 = {
     "DZ": "DZA", "AO": "AGO", "BJ": "BEN", "BW": "BWA", "BF": "BFA",
@@ -74,7 +69,6 @@ def load_tools() -> pd.DataFrame:
         df["cost_usd"].astype(str).str.replace("?", "").str.replace(",", "").str.strip()
     )
     df["cost_usd"] = pd.to_numeric(df["cost_usd"], errors="coerce").fillna(0)
-    df["nb_studies_in_inventory"] = pd.to_numeric(df["nb_studies_in_inventory"], errors="coerce").fillna(0)
     return df
 
 
