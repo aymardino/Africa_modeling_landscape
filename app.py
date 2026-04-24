@@ -96,7 +96,7 @@ st.markdown("### About this platform")
 col_a, col_b = st.columns(2)
 with col_a:
     st.markdown("""
-This inventory covers **67 energy modelling studies** applied to Africa between 2010 and
+This inventory covers **66 energy modelling studies** applied to Africa between 2010 and
 2025, analysed across 35+ dimensions including:
 
 - Technology coverage (solar, wind, biomass, hydro, nuclear...)
