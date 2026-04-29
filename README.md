@@ -1,4 +1,4 @@
-# AISESA Energy Models Africa — Streamlit App
+# AISESA Energy Models Africa - Streamlit App
 
 Decision-support platform for energy modelling across 54 African countries.
 
