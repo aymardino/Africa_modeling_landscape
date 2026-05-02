@@ -12,7 +12,7 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-The app opens at https://africamodelinglandscape-aisesa.streamlit.app/ in your browser.
+The app opens at https://enermod.africa/ in your browser.
 
 ## Structure
 
